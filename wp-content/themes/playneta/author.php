@@ -16,6 +16,14 @@ endif;
 
 ?>
 
+<?php
+/* breadcrumb Yoast */
+if ( function_exists( 'yoast_breadcrumb' ) ) :
+yoast_breadcrumb( '<div id="breadcrumbs">', '</div>' );
+endif;
+
+?>
+
 <section class="slider mt-4">
 	<div class="container-fluid">
 		<div class="row no-gutters">

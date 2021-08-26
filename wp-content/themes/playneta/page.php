@@ -44,7 +44,7 @@
 	<?php 
 		$query = new WP_Query( [
 			'post_type' => 'post',
-			'category_name' => 'home1',
+			'category_name' => 'picture',
 			'posts_per_page' => 6,
 			'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1)
 		] );
@@ -60,7 +60,7 @@
 				<a class="post-thumb mb-4 d-block" href="<?php the_permalink() ?>">
 					<?php the_post_thumbnail( '', 'class=img-fluid' ) ?>
 				</a>
-				<h3 class="post-title mt-1"><a href="<?php the_permalink() ?>"> <?php the_title() ?> </a></h3>
+				<div class="post-title mt-1 h3"><a href="<?php the_permalink() ?>"> <b><?php the_title() ?></b> </a></div>
 				<span class="text-muted letter-spacing text-uppercase font-sm"><?php the_time('F jS, Y') ?></span>
 				
 			</article>
@@ -81,7 +81,7 @@
 	<?php 
 		$query = new WP_Query( [
 			'post_type' => 'post',
-			'category_name' => 'home1',
+			'category_name' => 'text',
 			'posts_per_page' => 3,
 			// 'orderby'=> 'title'
 		] );
@@ -95,7 +95,7 @@
 		<div class="col-lg-4 col-md-6">
 			<article class="post-grid mb-5">
 
-				<h3 class="post-title mt-1"><a href="<?php the_permalink() ?>"> <?php the_title() ?> </a></h3>
+				<div class="post-title mt-1 h3"><a href="<?php the_permalink() ?>"> <b><?php the_title() ?></b> </a></div>
 
 				<?php the_excerpt(); ?>
 				

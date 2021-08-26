@@ -12,6 +12,15 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+
+<!-- 		<section class="error-404 not-found">
+			<h1>Ошибка 404</h1>
+			<h2>Данная страница не найдена! </h2>
+			<p>Почему?</p>
+			<p>Такой  страницы  не  существует –возможно  Вы  неправильно  ввели  адрес  в  адресной  строке браузера.</p>
+			<p>Что можно сделать?</p>
+			<p>Вы можете посетить <ahref="/">главную страницу</a>илидругие разделы сайта.</p>
+		</section><!-- .error-404 --> -->
 		<section class="error-404 not-found">
 			<header class="page-header">
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'playneta' ); ?></h1>

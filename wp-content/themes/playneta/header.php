@@ -6,6 +6,7 @@
     <title><?php wp_title(); ?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="Content-language" content="ru" />
 
     <!--Favicon-->
     <link rel="shortcut icon" href="<?php bloginfo('template_directory') ?>/images/favicon.ico" type="image/x-icon">
@@ -31,7 +32,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-2 col-md-4 text-center d-none d-lg-block">
-          <a class="navbar-brand " href="<?php bloginfo('url'); ?>">
+          <a class="navbar-brand " alt="kisskiss.dating" title="home page" href="<?php bloginfo('url'); ?>">
             <!-- <img src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="" class="img-fluid"> -->
             <?php bloginfo('name'); ?>
           </a>
